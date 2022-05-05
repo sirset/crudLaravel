@@ -20,9 +20,9 @@ class CreateProductosTable extends Migration
             $table->integer("precio")->default(0);
             $table->integer("peso")->default(0);
             $table->string("categoria");
-            $table->integer("stock");
+            $table->integer("stock")->default(0);
             $table->timestamps();
-            $table->id();
+            $table->enum("status", ["Active", "Inactive"])->default("Active");
         });
     }
 
