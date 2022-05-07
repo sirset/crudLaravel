@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\productController;
+use App\Http\Controllers\VentasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::resource('productos', productController::class);
+
+Route::resource('ventas', VentasController::class);

@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <div class="d-grid gap-2  mx-auto">
                         <a href="{{ url('/productos') }}" class="btn btn-primary">Productos</a>
-                        <a href="" class="btn btn-primary">Ventas</a>
+                        <a href="{{ url('/ventas') }}" class="btn btn-primary">Ventas</a>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,9 @@
         <div class="row justify-content-center h-auto align-items-center mt-4">
             <div class="col-4">
                 <a href="{{ url('/productos/create') }}" class="btn btn-primary">Crear Producto</a>
+                <a href="{{ url('/') }}" class="btn btn-primary">Volver</a>
             </div>
+
 
         </div>
         <div class="row justify-content-center h-auto align-items-center">
@@ -34,7 +36,9 @@
                                 <td>{{ $record->peso }}</td>
                                 <td>{{ $record->categoria }}</td>
                                 <td>{{ $record->stock }}</td>
-                                <td>#</td>
+                                <td><a class="btn btn-warning"
+                                        href="{{ url('/productos/' . $record->id . '/edit') }}">Editar</a>
+                                </td>
                                 <td>
                                     <form action="{{ url('/productos/' . $record->id) }}" method="post">
                                         @csrf
