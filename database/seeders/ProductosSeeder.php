@@ -30,7 +30,7 @@ class ProductosSeeder extends Seeder
         $usuario->precio= 3000;
         $usuario->peso= "1";
         $usuario->categoria = "Lacteos";
-        $usuario->categoria = 20;
+        $usuario->stock = 20;
         $usuario->status= "Active";
         $usuario->save();
     }

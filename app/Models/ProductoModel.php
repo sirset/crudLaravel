@@ -10,7 +10,7 @@ class ProductoModel extends Model
     use HasFactory;
 
     protected $table = "productos";
-
+    
     protected $fillable = [
         'name',
         'referencia',
@@ -20,4 +20,6 @@ class ProductoModel extends Model
         'stock',
         'status'
     ];
+
+    protected $useTimestamps = true;
 }
